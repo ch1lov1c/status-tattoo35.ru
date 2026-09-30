@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Тату-студия «сТАТУс» — Череповец | Мастер Вячеслав Чернышов</title>
-<meta name="description" content="Тату-студия «сТАТУс» в Череповце. Мастер Вячеслав Чернышов — татуировки во всех стилях, перекрытия, реставрация. Стаж более 10 лет. Подбор эскиза бесплатно. Вологодская, 46.">
+<meta name="description" content="Камерная тату-студия «сТАТУс» в Череповце. Мастер Вячеслав Чернышов — работа без конвейера, 1 человек в день. Все стили, перекрытия, стерильность уровня клиники, эскиз включен.">
 <link rel="icon" type="image/png" href="icon.png">
 <link rel="apple-touch-icon" href="icon.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -40,7 +40,7 @@ a{color:inherit;text-decoration:none}
 /* ---------- декоративные паттерны ---------- */
 .seigaiha{
   background-color:var(--ink2);
-  background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='80' height='40' viewBox='0 0 80 40'%3E%3Cg fill='none' stroke='%23c9a15a' stroke-opacity='0.10'%3E%3Ccircle cx='0' cy='40' r='38'/%3E%3Ccircle cx='0' cy='40' r='28'/%3E%3Ccircle cx='0' cy='40' r='18'/%3E%3Ccircle cx='80' cy='40' r='38'/%3E%3Ccircle cx='80' cy='40' r='28'/%3E%3Ccircle cx='80' cy='40' r='18'/%3E%3Ccircle cx='40' cy='0' r='38'/%3E%3Ccircle cx='40' cy='0' r='28'/%3E%3Ccircle cx='40' cy='0' r='18'/%3E%3C/g%3E%3C/svg%3E");
+  background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='80' height='40' viewBox='0 0 80 40'%3E%3Cg fill='none' stroke='%23c9a15a' stroke-opacity='0.10'%3E%3Ccircle cx='0' cy='40' r='38'/%3E%3Ccircle cx='0' cy='40' r='28'/%3E%3Ccircle cx='0' cy='18'/%3E%3Ccircle cx='80' cy='40' r='38'/%3E%3Ccircle cx='80' cy='40' r='28'/%3E%3Ccircle cx='80' cy='40' r='18'/%3E%3Ccircle cx='40' cy='0' r='38'/%3E%3Ccircle cx='40' cy='0' r='28'/%3E%3Ccircle cx='40' cy='0' r='18'/%3E%3C/g%3E%3C/svg%3E");
 }
 .asanoha{
   background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='60' height='104' viewBox='0 0 60 104'%3E%3Cg fill='none' stroke='%23c9a15a' stroke-opacity='0.07'%3E%3Cpath d='M30 0L60 17.3v34.6L30 69.2 0 51.9V17.3z'/%3E%3Cpath d='M30 0v69.2M0 17.3l60 34.6M60 17.3L0 51.9'/%3E%3Cpath d='M30 34.6L60 52v34.6L30 104 0 86.5V52z'/%3E%3C/g%3E%3C/svg%3E");
@@ -49,7 +49,7 @@ a{color:inherit;text-decoration:none}
 /* ---------- шапка ---------- */
 header{
   position:fixed;top:0;left:0;right:0;z-index:100;
-  background:rgba(14,11,10,.82);
+  background:rgba(14,11,10,.86);
   backdrop-filter:blur(12px);
   -webkit-backdrop-filter:blur(12px);
   border-bottom:1px solid var(--line);
@@ -57,17 +57,16 @@ header{
 .nav{
   max-width:1200px;margin:0 auto;
   display:flex;align-items:center;justify-content:space-between;
-  padding:.7rem 1.2rem;
+  padding:.65rem 1.2rem;
 }
-.logo{display:flex;align-items:center;gap:.7rem}
+.logo{display:flex;align-items:center;gap:.75rem}
 .logo-seal{
-  width:44px;height:44px;flex:0 0 44px;
-  background:var(--red);
+  width:42px;height:42px;flex:0 0 42px;
   border-radius:8px;
-  display:flex;align-items:center;justify-content:center;
-  font-family:'Noto Serif JP',serif;font-weight:900;color:#fff;
-  font-size:1.25rem;line-height:1;
-  box-shadow:0 0 18px rgba(200,54,43,.45);
+  object-fit:cover;
+  display:block;
+  box-shadow:0 0 16px rgba(200,54,43,.4);
+  border:1px solid rgba(201,161,90,.3);
 }
 .logo b{font-weight:600;font-size:1.25rem;letter-spacing:.12em}
 .logo small{display:block;font-size:.68rem;color:var(--paper-dim);letter-spacing:.28em;text-transform:uppercase}
@@ -126,13 +125,13 @@ nav a:hover::after{width:100%}
 }
 h1{
   font-weight:600;text-transform:uppercase;
-  font-size:clamp(2.6rem,7.5vw,5.5rem);
-  line-height:1.02;letter-spacing:.04em;
+  font-size:clamp(2.5rem,7vw,5.2rem);
+  line-height:1.05;letter-spacing:.04em;
 }
 h1 .red{color:var(--red)}
 .hero-sub{
-  margin-top:1.4rem;max-width:560px;
-  color:var(--paper-dim);font-size:clamp(1rem,1.6vw,1.15rem);
+  margin-top:1.4rem;max-width:620px;
+  color:var(--paper-dim);font-size:clamp(1rem,1.5vw,1.18rem);
   line-height:1.75;font-weight:300;
 }
 .hero-cta{margin-top:2.4rem;display:flex;gap:1rem;flex-wrap:wrap}
@@ -174,43 +173,94 @@ h2{
   font-weight:600;text-transform:uppercase;letter-spacing:.08em;
   font-size:clamp(1.7rem,3.5vw,2.5rem);
 }
-.sec-head p{width:100%;color:var(--paper-dim);max-width:640px;line-height:1.7;margin-top:.6rem}
+.sec-head p{width:100%;color:var(--paper-dim);max-width:680px;line-height:1.7;margin-top:.6rem}
 .divider{
   height:1px;max-width:1200px;margin:0 auto;
   background:linear-gradient(90deg,transparent,var(--line),transparent);
 }
 
-/* ---------- о мастере ---------- */
-.about-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:3rem;align-items:center}
-.about-text p{color:var(--paper-dim);line-height:1.85;margin-bottom:1.1rem;font-size:1.02rem}
-.about-text p b{color:var(--paper);font-weight:500}
-.about-list{list-style:none;margin-top:1.6rem}
-.about-list li{
-  padding:.75rem 0 .75rem 1.8rem;position:relative;
-  border-bottom:1px dashed rgba(201,161,90,.18);
-  color:var(--paper);font-weight:300;
-}
-.about-list li::before{
-  content:'刺';position:absolute;left:0;top:.8rem;
-  font-family:'Noto Serif JP',serif;font-size:.85rem;color:var(--red);
-}
-.about-photo{position:relative}
-.about-photo img{
-  width:100%;aspect-ratio:4/5;object-fit:cover;
+/* ---------- о мастере и стили ---------- */
+.about-manifesto{
   border:1px solid var(--line);
-  filter:saturate(.92);
+  background:linear-gradient(145deg,rgba(200,54,43,.08),transparent 60%),var(--ink2);
+  padding:2.5rem 2.2rem;
+  margin-bottom:2.5rem;
+  position:relative;
 }
-.about-photo::after{
-  content:'墨 と 針';
-  position:absolute;right:-.6rem;top:1.2rem;
-  writing-mode:vertical-rl;
-  font-family:'Noto Serif JP',serif;color:var(--gold);
-  letter-spacing:.6em;font-size:.9rem;opacity:.8;
-  background:var(--ink);padding:1rem .35rem;border:1px solid var(--line);
+.about-manifesto p{
+  font-size:1.15rem;line-height:1.85;color:var(--paper);font-weight:300;
 }
+.about-manifesto p b{color:#fff;font-weight:500}
+.about-manifesto p:not(:last-child){margin-bottom:1rem}
+
+.styles-title{
+  font-size:1.15rem;text-transform:uppercase;letter-spacing:.14em;
+  color:var(--gold);margin-bottom:1.4rem;font-weight:500;
+  display:flex;align-items:center;gap:.7rem;
+}
+.styles-title::before{content:'';width:24px;height:2px;background:var(--red)}
+
+.styles-grid{
+  display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));
+  gap:1.2rem;margin-bottom:2rem;
+}
+.style-item{
+  background:var(--ink3);
+  border:1px solid rgba(201,161,90,.16);
+  padding:1.4rem 1.3rem;
+  transition:transform .3s, border-color .3s;
+}
+.style-item:hover{
+  transform:translateY(-3px);border-color:rgba(200,54,43,.5);
+}
+.style-item h4{
+  font-weight:500;font-size:1.05rem;color:var(--paper);
+  text-transform:uppercase;letter-spacing:.1em;margin-bottom:.5rem;
+  display:flex;align-items:center;gap:.5rem;
+}
+.style-item h4 span{color:var(--red)}
+.style-item p{color:var(--paper-dim);font-size:.9rem;line-height:1.6}
+
+.quote-rule{
+  padding:1.4rem 1.8rem;
+  background:linear-gradient(90deg,rgba(201,161,90,.12),transparent);
+  border-left:3px solid var(--red);
+  font-size:1.1rem;color:var(--paper);
+  letter-spacing:.04em;line-height:1.6;
+}
+.quote-rule b{color:var(--gold);font-weight:500}
+
+/* ---------- как мы работаем (принципы) ---------- */
+#workflow{background:var(--ink2)}
+.workflow-grid{
+  display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+  gap:1.3rem;
+}
+.wf-card{
+  background:linear-gradient(160deg,rgba(201,161,90,.05),transparent 65%),var(--ink);
+  border:1px solid var(--line);
+  padding:2rem 1.6rem;
+  position:relative;
+  transition:transform .3s, border-color .3s;
+}
+.wf-card:hover{
+  transform:translateY(-4px);border-color:rgba(200,54,43,.5);
+}
+.wf-card .num{
+  font-family:'Noto Serif JP',serif;font-weight:900;font-size:2.4rem;
+  color:transparent;-webkit-text-stroke:1px rgba(201,161,90,.25);
+  position:absolute;right:1rem;top:.6rem;line-height:1;
+}
+.wf-card h3{
+  font-weight:500;text-transform:uppercase;letter-spacing:.12em;
+  font-size:1.08rem;color:var(--paper);margin-bottom:.8rem;
+  padding-right:2.5rem;
+}
+.wf-card p{color:var(--paper-dim);font-size:.93rem;line-height:1.75}
+.wf-card p b{color:var(--paper);font-weight:400}
 
 /* ---------- работы ---------- */
-#works{background:var(--ink2)}
+#works{background:var(--ink)}
 .works-grid{
   display:grid;
   grid-template-columns:repeat(auto-fill,minmax(260px,1fr));
@@ -245,11 +295,12 @@ h2{
 .works-note::before{content:'';width:34px;height:1px;background:var(--red);flex:0 0 34px}
 
 /* ---------- цены ---------- */
-.price-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:1.2rem}
+#prices{background:var(--ink2)}
+.price-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:1.3rem}
 .price-card{
   border:1px solid var(--line);
-  background:linear-gradient(160deg,rgba(201,161,90,.06),transparent 55%),var(--ink2);
-  padding:2rem 1.6rem;
+  background:linear-gradient(160deg,rgba(201,161,90,.06),transparent 55%),var(--ink);
+  padding:2.2rem 1.8rem;
   position:relative;overflow:hidden;
   transition:transform .3s,border-color .3s;
 }
@@ -260,19 +311,20 @@ h2{
   color:transparent;-webkit-text-stroke:1px rgba(201,161,90,.22);
   line-height:1;user-select:none;
 }
-.price-card h3{font-weight:500;text-transform:uppercase;letter-spacing:.14em;font-size:1rem;margin-bottom:.9rem}
+.price-card h3{font-weight:500;text-transform:uppercase;letter-spacing:.14em;font-size:1.05rem;margin-bottom:.9rem}
 .price-card .val{font-size:2rem;font-weight:600;color:var(--red);margin-bottom:.7rem}
 .price-card .val small{font-size:1rem;color:var(--paper-dim);font-weight:300}
 .price-card p{color:var(--paper-dim);font-size:.92rem;line-height:1.7}
 .price-foot{
-  margin-top:1.8rem;padding:1.1rem 1.4rem;
+  margin-top:1.8rem;padding:1.2rem 1.5rem;
   border:1px dashed rgba(201,161,90,.3);
-  color:var(--paper-dim);font-size:.92rem;line-height:1.7;
+  color:var(--paper-dim);font-size:.95rem;line-height:1.7;
+  background:var(--ink);
 }
 .price-foot b{color:var(--gold);font-weight:500}
 
 /* ---------- студия ---------- */
-#studio{background:var(--ink2)}
+#studio{background:var(--ink)}
 .studio-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:1rem}
 .studio-grid img{
   width:100%;aspect-ratio:4/3;object-fit:cover;
@@ -287,6 +339,7 @@ h2{
 .studio-note b{color:var(--paper);font-weight:500}
 
 /* ---------- контакты ---------- */
+#contacts{background:var(--ink2)}
 .contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:3rem;align-items:start}
 .c-item{display:flex;gap:1.1rem;margin-bottom:1.7rem;align-items:flex-start}
 .c-item .ico{
@@ -294,7 +347,7 @@ h2{
   border:1px solid var(--line);
   display:flex;align-items:center;justify-content:center;
   font-family:'Noto Serif JP',serif;color:var(--red);font-weight:600;font-size:1.15rem;
-  background:var(--ink2);
+  background:var(--ink);
 }
 .c-item h4{font-weight:500;text-transform:uppercase;letter-spacing:.16em;font-size:.8rem;color:var(--paper-dim);margin-bottom:.35rem}
 .c-item p, .c-item a.link{font-size:1.05rem;color:var(--paper);line-height:1.6}
@@ -303,22 +356,26 @@ a.link:hover{color:var(--red);border-color:var(--red)}
 .contact-card{
   border:1px solid var(--line);
   background:
-    radial-gradient(ellipse 90% 70% at 80% 0%, rgba(200,54,43,.12), transparent 60%),
-    var(--ink2);
+    radial-gradient(ellipse 90% 70% at 80% 0%, rgba(200,54,43,.14), transparent 60%),
+    var(--ink);
   padding:2.4rem 2rem;
 }
 .contact-card h3{
-  font-family:'Noto Serif JP',serif;font-weight:600;font-size:1.4rem;margin-bottom:1rem;
+  font-family:'Noto Serif JP',serif;font-weight:600;font-size:1.4rem;margin-bottom:1rem;color:#fff;
 }
-.contact-card p{color:var(--paper-dim);line-height:1.8;margin-bottom:1.6rem}
+.contact-card p{color:var(--paper-dim);line-height:1.8;margin-bottom:1.4rem;font-size:1rem}
 .contact-card .btn{width:100%;justify-content:center}
-.small-print{margin-top:1.4rem;font-size:.78rem;color:rgba(201,189,166,.6);line-height:1.6}
+.share-note{
+  margin-top:1.2rem;font-size:.88rem;color:var(--gold);line-height:1.6;
+}
+.small-print{margin-top:1.2rem;font-size:.78rem;color:rgba(201,189,166,.6);line-height:1.6}
 
 /* ---------- футер ---------- */
 footer{
   border-top:1px solid var(--line);
   padding:2rem 0 6.5rem;
   color:var(--paper-dim);font-size:.82rem;letter-spacing:.05em;
+  background:var(--ink);
 }
 footer .wrap{display:flex;justify-content:space-between;gap:1rem;flex-wrap:wrap;align-items:center}
 footer .jp{font-family:'Noto Serif JP',serif;color:var(--gold);letter-spacing:.4em}
@@ -363,13 +420,12 @@ footer .jp{font-family:'Noto Serif JP',serif;color:var(--gold);letter-spacing:.4
 }
 
 /* ---------- появление при скролле ---------- */
-.reveal{opacity:0;transform:translateY(26px);transition:opacity .7s,transform .7s}
+.reveal{opacity:0;transform:translateY(24px);transition:opacity .65s,transform .65s}
 .reveal.on{opacity:1;transform:none}
 
 /* ---------- адаптив ---------- */
 @media(max-width:960px){
-  .about-grid,.contact-grid{grid-template-columns:1fr;gap:2.2rem}
-  .about-photo{max-width:520px}
+  .contact-grid{grid-template-columns:1fr;gap:2.2rem}
 }
 @media(max-width:768px){
   nav ul{
@@ -387,12 +443,14 @@ footer .jp{font-family:'Noto Serif JP',serif;color:var(--gold);letter-spacing:.4
   section{padding:4rem 0}
   .fab{display:flex}
   .works-grid{grid-template-columns:repeat(2,1fr);gap:.6rem}
+  .workflow-grid{grid-template-columns:1fr}
   .lb-prev{left:.3rem}.lb-next{right:.3rem}
 }
 @media(max-width:430px){
   .works-grid{grid-template-columns:1fr 1fr}
   .hero-cta .btn{width:100%;justify-content:center}
   .logo b{font-size:1.05rem}
+  .about-manifesto{padding:1.6rem 1.2rem}
 }
 </style>
 </head>
@@ -401,7 +459,7 @@ footer .jp{font-family:'Noto Serif JP',serif;color:var(--gold);letter-spacing:.4
 <header>
   <div class="nav">
     <a class="logo" href="#top" aria-label="сТАТУс — на главную">
-      <span class="logo-seal">刺</span>
+      <img class="logo-seal" src="icon.png" alt="сТАТУс — тату студия Череповец">
       <span><b>сТАТУс</b><small>тату-студия · Череповец</small></span>
     </a>
     <nav>
@@ -410,6 +468,7 @@ footer .jp{font-family:'Noto Serif JP',serif;color:var(--gold);letter-spacing:.4
       </button>
       <ul id="menu">
         <li><a href="#about">Мастер</a></li>
+        <li><a href="#workflow">Как работаем</a></li>
         <li><a href="#works">Работы</a></li>
         <li><a href="#prices">Цены</a></li>
         <li><a href="#studio">Студия</a></li>
@@ -422,53 +481,116 @@ footer .jp{font-family:'Noto Serif JP',serif;color:var(--gold);letter-spacing:.4
 <!-- ГЕРОЙ -->
 <section class="hero" id="top">
   <div class="hero-inner">
-    <div class="hero-kanji">刺青 — искусство, которое остаётся с тобой</div>
+    <div class="hero-kanji">刺青 — авторская татуировка в Череповце</div>
     <h1>Тату-студия
 <span class="red">«сТАТУс»</span></h1>
     <p class="hero-sub">
-      Авторская студия Вячеслава Чернышова в Череповце. Татуировки во всех стилях —
-      от японской классики и реализма до графики и орнаментов. Перекрытия старых работ,
-      реставрация, индивидуальные эскизы.
+      Камерное пространство Вячеслава Чернышова для тех, кто идет за татуировкой, а не за интерьером для сторис. Без администраторов, учеников и спешки: один на один от первой идеи до готовой работы.
     </p>
     <div class="hero-cta">
-      <a class="btn btn-red" href="https://vk.com/id160745487" target="_blank" rel="noopener">Записаться ВКонтакте</a>
+      <a class="btn btn-red" href="https://vk.com/id160745487" target="_blank" rel="noopener">Написать мастеру</a>
       <a class="btn btn-ghost" href="#works">Смотреть работы</a>
     </div>
     <div class="hero-facts">
+      <div class="fact"><b>1</b><span>человек в день</span></div>
       <div class="fact"><b>10+</b><span>лет стажа</span></div>
-      <div class="fact"><b>5000+</b><span>подписчиков ВК</span></div>
-      <div class="fact"><b>0 ₽</b><span>подбор эскиза</span></div>
-      <div class="fact"><b>100%</b><span>фото без фотошопа</span></div>
+      <div class="fact"><b>0 ₽</b><span>эскиз включен</span></div>
+      <div class="fact"><b>100%</b><span>без ретуши</span></div>
     </div>
   </div>
   <div class="scroll-hint">листай вниз ▾</div>
 </section>
 
-<!-- О МАСТЕРЕ -->
+<!-- О МАСТЕРЕ И СТИЛИ -->
 <section id="about" class="asanoha">
   <div class="wrap">
     <div class="sec-head reveal">
       <span class="kanji">師</span>
       <h2>Мастер</h2>
-      <p>Один мастер — полная ответственность за результат. От первой консультации до заживления.</p>
+      <p>Один мастер от начала до конца: сам рисую эскиз, сам стерилизую инструмент, сам завариваю чай.</p>
     </div>
-    <div class="about-grid">
-      <div class="about-text reveal">
-        <p><b>Вячеслав Чернышов</b> — тату-мастер с официальным стажем более 10 лет.
-        На самом деле путь начался ещё в 90-е: первые машинки, первые эскизы, первая кожа.
-        С тех пор — тысячи часов за работой и постоянный рост от сеанса к сеансу.</p>
-        <p>Работает <b>во всех стилях</b>: реализм и блэк-энд-грей, японская классика,
-        графика, дотворк, орнаментал, леттеринг, цветные работы. Отдельное направление —
-        <b>перекрытия неудачных татуировок и реставрация</b> старых, выцветших работ.</p>
-        <ul class="about-list">
-          <li>Индивидуальный эскиз под вашу идею — подбор бесплатно</li>
-          <li>Все работы сфотографированы на телефон, без фотошопа и фильтров</li>
-          <li>Одноразовые расходники, стерильность на каждом сеансе</li>
-          <li>Официально: самозанятый, работа по договорённости и записи</li>
-        </ul>
+
+    <div class="about-manifesto reveal">
+      <p>
+        <b>Привет. Меня зовут Вячеслав</b>, и моя студия работает без администраторов, учеников и случайных людей. Это камерное пространство для тех, кто идет за качественной татуировкой, а не за интерьером для сторис.
+      </p>
+      <p>
+        Официальный стаж — более 10 лет, а путь начался ещё в 90-е с первых машинок и эскизов. За плечами тысячи часов практики и постоянная работа над чистотой линий и плотностью прокраса.
+      </p>
+    </div>
+
+    <div class="reveal">
+      <div class="styles-title">Стили без ограничений</div>
+      <div class="styles-grid">
+        <div class="style-item">
+          <h4><span>▪</span> Минимализм</h4>
+          <p>Невесомые тонкие линии, аккуратные буквы или символы толщиной буквально с волос.</p>
+        </div>
+        <div class="style-item">
+          <h4><span>▪</span> Плотный олдскул</h4>
+          <p>Классика с сочным плотным закрасом, которая будет гореть ярким цветом и через 10 лет.</p>
+        </div>
+        <div class="style-item">
+          <h4><span>▪</span> Блэкворк и гравюра</h4>
+          <p>Жесткий глубокий черный, четкая графичная штриховка и выразительные контрасты.</p>
+        </div>
+        <div class="style-item">
+          <h4><span>▪</span> Красивый реализм</h4>
+          <p>Детализированные черно-серые и цветные сюжеты, портреты, животные и мифология.</p>
+        </div>
+        <div class="style-item">
+          <h4><span>▪</span> Перекрытия (Cover-up)</h4>
+          <p>Грамотное перекрытие неудачных татуировок и бережная реставрация старых работ.</p>
+        </div>
       </div>
-      <div class="about-photo reveal">
-        <img src="work-geisha.jpg" alt="Работа мастера — гейша с катаной, чёрно-серый реализм с цветом" loading="lazy">
+
+      <div class="quote-rule">
+        Главное правило одно: <b>идея должна быть вашей, а исполнение — моим лучшим.</b>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- КАК МЫ РАБОТАЕМ -->
+<section id="workflow" class="seigaiha">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="kanji">道</span>
+      <h2>Как мы работаем</h2>
+      <p>Честный подход к процессу: без спешки, с максимальным вниманием к безопасности и вашему комфорту.</p>
+    </div>
+
+    <div class="workflow-grid">
+      <div class="wf-card reveal">
+        <span class="num">壱</span>
+        <h3>Без конвейера</h3>
+        <p><b>Максимум один человек в день.</b> Никакой спешки, суеты и посторонних глаз. Все внимание и время студии посвящены только вам.</p>
+      </div>
+
+      <div class="wf-card reveal">
+        <span class="num">弐</span>
+        <h3>Комфорт на сеансе</h3>
+        <p>С болью мы справимся легко: использую качественные профессиональные средства <b>первичной и вторичной анестезии</b>. Удобное кресло, хорошая музыка, ароматный чай и перерывы тогда, когда они нужны вам.</p>
+      </div>
+
+      <div class="wf-card reveal">
+        <span class="num">参</span>
+        <h3>Стерильность клиники</h3>
+        <p><b>Все одноразовые расходники вскрываются строго при вас.</b> Оборудование защищено барьерной защитой, а кабинет дезинфицируется так, что можно перекусить с пола (но лучше не стоит).</p>
+      </div>
+
+      <div class="wf-card reveal">
+        <span class="num">四</span>
+        <h3>Эскиз включен</h3>
+        <p>Созваниваемся или списываемся заранее. <b>Рисую и дорабатываю эскиз</b> до тех пор, пока вы сами уверенно не скажете: «Это оно».</p>
+      </div>
+
+      <div class="wf-card reveal">
+        <span class="num">五</span>
+        <h3>Прозрачно по цене</h3>
+        <p>Стоимость зависит от размера, детализации и времени работы. <b>Называю финальную цифру сразу</b> — никаких скрытых платежей и неожиданных доплат после сеанса.</p>
       </div>
     </div>
   </div>
@@ -477,12 +599,12 @@ footer .jp{font-family:'Noto Serif JP',serif;color:var(--gold);letter-spacing:.4
 <div class="divider"></div>
 
 <!-- РАБОТЫ -->
-<section id="works" class="seigaiha">
+<section id="works" class="asanoha">
   <div class="wrap">
     <div class="sec-head reveal">
       <span class="kanji">作</span>
       <h2>Работы</h2>
-      <p>Небольшая часть портфолио. Все фото сняты на телефон сразу после сеанса или на заживших работах — никакой ретуши. Полный архив — в группе ВКонтакте.</p>
+      <p>Небольшая часть портфолио. Все фото сняты на телефон сразу после сеанса или на заживших работах — никакой ретуши. Полный архив — в нашей группе ВКонтакте.</p>
     </div>
     <div class="works-grid">
       <figure class="work reveal"><img src="work-eagle.jpg" alt="Татуировка орёл, реализм, предплечье" loading="lazy"><figcaption class="cap">Орёл · реализм<span>鷲</span></figcaption></figure>
@@ -505,36 +627,35 @@ footer .jp{font-family:'Noto Serif JP',serif;color:var(--gold);letter-spacing:.4
 <div class="divider"></div>
 
 <!-- ЦЕНЫ -->
-<section id="prices" class="asanoha">
+<section id="prices" class="seigaiha">
   <div class="wrap">
     <div class="sec-head reveal">
       <span class="kanji">値</span>
       <h2>Цены</h2>
-      <p>Финальная стоимость зависит от размера, детализации и места на теле — точную цифру мастер назовёт после обсуждения эскиза.</p>
+      <p>Финальная стоимость зависит от размера, детализации и места на теле — точную цифру мастер назовёт сразу после обсуждения идеи.</p>
     </div>
     <div class="price-grid">
       <div class="price-card reveal">
         <span class="k">墨</span>
         <h3>Татуировка</h3>
         <div class="val">от 1 000 <small>₽</small></div>
-        <p>Любой стиль и размер — от миниатюры до рукава. Цена рассчитывается индивидуально по эскизу.</p>
+        <p>Любой стиль и размер — от аккуратной миниатюры до масштабного проекта. Стоимость рассчитывается индивидуально под ваш эскиз.</p>
       </div>
       <div class="price-card reveal">
         <span class="k">直</span>
         <h3>Перекрытие / реставрация</h3>
         <div class="val">от 10 000 <small>₽</small></div>
-        <p>Кавер-ап неудачных татуировок и обновление старых, потерявших вид работ. Сложные случаи — welcome.</p>
+        <p>Кавер-ап неудачных татуировок и обновление старых работ, потерявших цвет. Сложные случаи берем в работу.</p>
       </div>
       <div class="price-card reveal">
         <span class="k">絵</span>
-        <h3>Подбор эскиза</h3>
-        <div class="val">Бесплатно</div>
-        <p>Обсуждение идеи, референсы и подбор эскиза под вашу задумку не стоят ничего. Приходите с идеей — уйдёте с планом.</p>
+        <h3>Подбор и эскиз</h3>
+        <div class="val">Включено</div>
+        <p>Обсуждение задумки, поиск референсов и отрисовка эскиза включены в сеанс. Доводим рисунок до идеала бесплатно.</p>
       </div>
     </div>
     <div class="price-foot reveal">
-      <b>Как проходит запись:</b> пишете в ВКонтакте → обсуждаете идею и эскиз → согласовываете дату и стоимость → сеанс.
-      Работа официально: мастер оформлен как самозанятый.
+      <b>Схема записи:</b> списываемся в ВК → обсуждаем идею и эскиз → фиксируем дату и финальную цену → сеанс. Мастер работает официально (самозанятый).
     </div>
   </div>
 </section>
@@ -542,12 +663,12 @@ footer .jp{font-family:'Noto Serif JP',serif;color:var(--gold);letter-spacing:.4
 <div class="divider"></div>
 
 <!-- СТУДИЯ -->
-<section id="studio" class="seigaiha">
+<section id="studio" class="asanoha">
   <div class="wrap">
     <div class="sec-head reveal">
       <span class="kanji">屋</span>
       <h2>Студия</h2>
-      <p>Атмосфера японского кабинета: маски ханья, катаны, самурайская графика. Чисто, стерильно, всё в плёнке и одноразовом.</p>
+      <p>Атмосфера японского кабинета: маски ханья, катаны, самурайская графика. Чисто, стерильно, всё в барьерной защите и одноразовых материалах.</p>
     </div>
     <div class="studio-grid">
       <img class="reveal" src="studio-1.jpg" alt="Интерьер тату-студии сТАТУс — японские постеры и краски" loading="lazy">
@@ -566,7 +687,7 @@ footer .jp{font-family:'Noto Serif JP',serif;color:var(--gold);letter-spacing:.4
 <section id="contacts">
   <div class="wrap">
     <div class="sec-head reveal">
-      <span class="kanji">道</span>
+      <span class="kanji">聯</span>
       <h2>Контакты</h2>
     </div>
     <div class="contact-grid">
@@ -590,7 +711,7 @@ footer .jp{font-family:'Noto Serif JP',serif;color:var(--gold);letter-spacing:.4
           <div class="ico">記</div>
           <div>
             <h4>Запись</h4>
-            <p>Сообщением ВКонтакте, приём по предварительной записи</p>
+            <p>Личные сообщения ВКонтакте (приём строго по записи)</p>
             <a class="link" href="https://vk.com/id160745487" target="_blank" rel="noopener">vk.com/id160745487</a>
           </div>
         </div>
@@ -598,19 +719,20 @@ footer .jp{font-family:'Noto Serif JP',serif;color:var(--gold);letter-spacing:.4
           <div class="ico">群</div>
           <div>
             <h4>Группа студии</h4>
-            <p>Тату-студия «сТАТУс», Череповец — все свежие работы</p>
+            <p>Тату-студия «сТАТУс», Череповец — все свежие работы и новости</p>
             <a class="link" href="https://vk.ru/tattostatus" target="_blank" rel="noopener">vk.ru/tattostatus</a>
           </div>
         </div>
       </div>
       <div class="contact-card reveal">
-        <h3>Решились на татуировку?</h3>
+        <h3>Чтобы начать — просто напишите</h3>
         <p>
-          Вы должны хотя бы примерно знать, что хотите видеть на себе, — с остальным поможет мастер.
-          Напишите пару слов о своей идее, приложите референсы, и Вячеслав предложит эскиз,
-          место и рассчитает стоимость.
+          Кидайте любые референсы, коллажи из Pinterest, корявые рисунки на салфетках или просто опишите задумку словами. Если я пойму, что смогу сделать эту работу хорошо — мы начнем собирать вашу будущую любимую татуировку.
         </p>
-        <a class="btn btn-red" href="https://vk.com/id160745487" target="_blank" rel="noopener">Написать мастеру</a>
+        <a class="btn btn-red" href="https://vk.com/id160745487" target="_blank" rel="noopener">Написать Вячеславу</a>
+        <p class="share-note">
+          ✦ Делайте репосты друзьям — вдруг и им сейчас нужна качественная татуировка.
+        </p>
         <p class="small-print">
           Чернышов Вячеслав Владимирович · самозанятый · ИНН 352827827217
         </p>
